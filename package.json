@@ -74,7 +74,7 @@
   "description": "hds's config",
   "license": "ISC",
   "main": "index.js",
-  "name": "hds-confs",
+  "name": "mqj-confs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

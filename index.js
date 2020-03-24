@@ -33,7 +33,11 @@ module.exports = (function(){
         publicPath = userDefineConfigs.output.publicPath;
     }catch(e){};
 
-    publicPath.replace(/((?:(?:https?:)?\/\/\w+(?:\.\w+)+)?\/?)?(.*)/, function(all, domain, base){
+    // publicPath.replace(/((?:(?:https?:)?\/\/\w+(?:\.\w+)+)?\/?)?(.*)/, function(all, domain, base){
+    //     publicPath = domain || '';
+    //     basePath = base;
+    // });
+    publicPath.replace(/((?:(?:https|http?:)?\/\/[\w-]+(?:\.\w+)+)?\/?)?(.*)/, function(all, domain, base){
         publicPath = domain || '';
         basePath = base;
     });
